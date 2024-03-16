@@ -1,0 +1,21 @@
+echo "Creating command 'allfetch'..."
+alias allfetch="hyfetch && cpufetch && gpufetch"
+
+echo "Adding ~/.local/bin, ~/go/bin and ~/bin to PATH..."
+export PATH=~/.local/bin:~/go/bin:~/bin:$PATH
+
+# The token is omitted here. Take it from your backup.
+# echo "Exporting GITHUB_TOKEN..."
+# export GITHUB_TOKEN="$(echo "" | base64 -d)"
+
+echo "Exporting m(odern )performance variable in case you'll perform an upgrade to Nitrous kernel..."
+export USE_MPERFORMANCE=true
+
+echo "Exporting CCache stuff..."
+export USE_CCACHE=1 CCACHE_EXEC=/usr/bin/ccache CCACHE_DIR=~/.cache/ccache
+
+echo "Executing various other stuff added by other packages..."
+source /usr/share/nvm/init-nvm.sh
+if [[ -f "$HOME/.cache/wal/sequences" ]]; then
+    (cat $HOME/.cache/wal/sequences)
+fi

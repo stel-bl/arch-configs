@@ -1,0 +1,1 @@
+ah-yes-zsh/.p10k.zsh

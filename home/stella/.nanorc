@@ -1,0 +1,15 @@
+set autoindent
+set backup
+set historylog
+set positionlog
+set brackets ""’)>]}"
+set matchbrackets "(<[{)>]}"
+set linenumbers
+#set mouse
+set multibuffer
+set tabsize 4
+set quickblank
+set titlecolor brightwhite,lightred
+set statuscolor brightwhite,lightred
+set numbercolor brightwhite,lightred
+set keycolor brightwhite,lightred

@@ -1,0 +1,40 @@
+[user]
+	name = Stella Bloom
+	email = windowz414@gnuweeb.org
+	signingkey = E80C3CEAB860BA56C40E5E77F8D6A3BC96365743
+[core]
+	editor = nano
+[commit]
+	gpgsign = true
+[color]
+	ui = auto
+[alias]
+	commitsigned = commit -s
+	amend = commit --amend
+	cherry-pick = cherry-pick --signoff
+[url "git@github.com:"]
+	insteadof = https://github.com/
+	insteadof = http://github.com/
+	insteadof = github://
+	insteadof = github:
+	insteadof = git://github.com/
+[url "git@gitlab.com:"]
+	insteadof = https://gitlab.com/
+	insteadof = http://gitlab.com/
+	insteadof = git://gitlab.com/
+[url "ssh://git@git.halogenos.org/"]
+     insteadof = https://git.halogenos.org/
+     insteadof = http://git.halogenos.org/
+     insteadof = git://git.halogenos.org/
+[sendemail]
+  smtpEncryption = tls
+  smtpServer = mail1.gnuweeb.org
+  smtpUser = windowz414@gnuweeb.org
+  smtpPassword = "S.b.2023"
+  smtpServerPort = 587
+[pull]
+	rebase = false
+[safe]
+	directory = /opt/flutter
+[init]
+	defaultBranch = mistress
